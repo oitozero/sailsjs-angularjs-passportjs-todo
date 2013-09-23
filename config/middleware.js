@@ -51,8 +51,6 @@ module.exports = {
             var GOOGLE_CLIENT_ID = local.GOOGLE_CLIENT_ID;
             var GOOGLE_CLIENT_SECRET = local.GITHUB_CLIENT_SECRET;
             
-            console.log(JSON.stringify(local));
-
             passport.use(new DropboxStrategy({
                 consumerKey: DROPBOX_APP_KEY,
                 consumerSecret: DROPBOX_APP_SECRET,
