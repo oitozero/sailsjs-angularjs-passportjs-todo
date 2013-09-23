@@ -1,0 +1,26 @@
+<div ng-app="todoApp">
+    <div class="container" ng-controller="TodoController" ng-cloak>
+        <div>
+            <h1 id="main-title">Hi <%= user.name %></h1>
+            <a class="btn" href="/logout">Logout</a>
+        </div>
+
+        <h1>Todos</h1>
+        <p id="empty" ng-hide="todos.length || !loaded">You don't have any todos! Add one now:</p>
+        <ul id="todos" class="unstyled">
+            <li ng-repeat="todo in todos">
+                <label class="checkbox">
+                <input type="checkbox" ng-model="todo.completed" ng-change="changeCompleted(todo)" />
+                {{todo.title}}
+                </label>
+            </li>
+        </ul>
+        <form name="myForm" class="form-inline">
+            <input id="todo-title" type="text" ng-model="newTodoTitle" ng-required />
+            <button id="add-btn" class="btn btn-success" ng-click="addTodo(newTodoTitle)">Add</button>
+        </form>
+        <p>
+        <a href id="remove-completed-btn" ng-click="removeCompletedItems()">Remove completed items</a>
+        </p>
+    </div>
+</div>

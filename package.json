@@ -1,0 +1,25 @@
+{
+  "name": "sailsjs-angularjs-passportjs-todo",
+  "private": true,
+  "version": "0.0.1",
+  "description": "a simple todo app with SailsJS and AngularJS (+PassportJS)",
+  "dependencies": {
+    "sails": "0.9.4",
+    "grunt": "0.4.1",
+    "sails-disk": "~0.9.0",
+    "ejs": "0.8.4",
+    "optimist": "0.3.4",
+    "passport": "~0.1.17",
+    "passport-dropbox": "~0.1.2",
+    "passport-github": "~0.1.5",
+    "passport-google-oauth": "~0.1.5"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node debug app.js"
+  },
+  "main": "app.js",
+  "repository": "https://github.com/oitozero/sailsjs-angularjs-passportjs-todo",
+  "author": "oitozero",
+  "license": "MIT License"
+}
