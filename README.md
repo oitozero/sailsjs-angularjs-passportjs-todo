@@ -37,6 +37,9 @@ $ git clone https://github.com/oitozero/sailsjs-angularjs-passportjs-todo
 $ cd sailsjs-angularjs-todo
 !! configure credentials in config/middleware.js !!
 $ npm install
+$ npm install -g sails
 $ sails lift
+
+\Ahoy/
 
 ```
